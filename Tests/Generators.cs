@@ -8,7 +8,8 @@ namespace Tests
     {
         public static Arbitrary<Developer> Developers()
         {
-            return Arb.From<Developer>();
+            var genDev = Gen.zip(Arb.Generate<string>(), Arb.Generate<int>()).Select((tuple) => new Developer(tuple.Item1, tuple.Item2));
+            return Arb.From(genDev);
         }
 
         public static Arbitrary<Developer> HungryDeveloperGenerator()

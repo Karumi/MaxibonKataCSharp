@@ -8,6 +8,14 @@ namespace MaxibonKataCSharp
         readonly IChat chat;
         int maxibonsLeft;
 
+        public int MaxibonsLeft
+        {
+            get
+            {
+                return maxibonsLeft;
+            }
+        }
+
         bool ShouldBuyMoreMaxibons => maxibonsLeft <= 2;
 
         public KarumiHQ(IChat chat)
@@ -20,9 +28,9 @@ namespace MaxibonKataCSharp
         {
         }
 
-        void OpenFridge(Developer developer)
+        public void OpenFridge(Developer developer)
         {
-
+            OpenFridge(new List<Developer>() { developer });
         }
 
         void OpenFridge(List<Developer> developers)
