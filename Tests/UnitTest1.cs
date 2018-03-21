@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using FsCheck;
 using Xunit;
 
 namespace Tests
@@ -8,7 +10,8 @@ namespace Tests
         [Fact]
         public void Test1()
         {
-
+            Prop.ForAll<int[]>(xs => xs.Reverse().Reverse().SequenceEqual(xs))
+    .QuickCheckThrowOnFailure();
         }
     }
 }
