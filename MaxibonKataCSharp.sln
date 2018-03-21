@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxibonKataCSharp", "MaxibonKataCSharp\MaxibonKataCSharp.csproj", "{48EFBE21-285F-492C-B7A8-3AD3785C3473}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{B25CC464-C145-4A09-A00B-EC917CF29CF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{48EFBE21-285F-492C-B7A8-3AD3785C3473}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48EFBE21-285F-492C-B7A8-3AD3785C3473}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48EFBE21-285F-492C-B7A8-3AD3785C3473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25CC464-C145-4A09-A00B-EC917CF29CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25CC464-C145-4A09-A00B-EC917CF29CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25CC464-C145-4A09-A00B-EC917CF29CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25CC464-C145-4A09-A00B-EC917CF29CF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
